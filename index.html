@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css measuring units</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .box{
+            background-color: red;
+            font-size: 2rem;
+            padding: 10px;
+            margin-bottom: 20px;    
+            border: 2px solid;
+       }
+       .fifty-percent{
+        width: 50%;
+       }
+       .one-hundred-pixel{
+        width: 100px;
+       }
+       .parent{
+        border: 1px solid;
+        width: 200px;
+       }
+       .vw{
+        width: 50vw;
+       }
+       .vh{
+        margin-top: 20px;
+        height: 25vh;
+       }
+       
+       .rem{
+        font-size: 1rem;
+       }
+       .em{
+        font-size: 1em;
+       }
+       .em-rem-parent{
+        font-size: 30px;
+       }
+    </style>
+</head>
+<body>
+    <h1>Exploring css measuring units</h1>
+
+    <div class="box fifty-percent">50%</div>
+
+    <div class="box one-hundred-pixel">100px</div>
+
+    <hr>
+
+    <div class="parent">
+        <div class="box fifty-percent">50%</div>
+        <div class="box fifty-percent vw">50vw</div>
+        <div class="box one-hundred-pixel">100px</div>
+    </div>
+    <div class="box one-hundred-pixel vh">25vh</div>
+
+    <div class="rem">1rem</div>
+    <div class="em">1em</div>
+
+
+    <div class="em-rem-parent">
+        <div class="rem">1rem</div>
+        <div class="em">1em</div>
+    </div>
+
+
+
+
+
+</body>
+</html>
